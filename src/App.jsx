@@ -42,7 +42,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <HUD cookies={this.state.cookies} cps={this.state.cps10 * 10} />
+        <HUD
+          cookies={this.state.cookies}
+          cps={this.state.cps10 * 10}
+          clickPower={this.state.clickPower}
+        />
         <div className="core">
           <Cookie onClick={this.handleCookieClick} />
           <HelperList onHelperItemClick={this.handleHelperItemClick} />

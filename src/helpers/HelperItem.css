@@ -1,0 +1,21 @@
+.helper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  padding: 5px 0;
+  /* border: 1px dashed black; */
+}
+
+.helper-item-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.helper-item-amount {
+  flex-grow: 1;
+}
+
+.helper-item-element {
+  padding: 0 5px;
+}

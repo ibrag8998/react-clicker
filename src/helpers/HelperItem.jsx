@@ -6,18 +6,25 @@ export default function HelperItem(props) {
 
   return (
     <div className="helper-item">
-      <div>{props.item.name}</div>
-      <div>${props.item.price}</div>
-      <div>{props.item.cps} cps</div>
-      <div>x{amount}</div>
-      <button
-        onClick={() => {
-          const ok = props.onClick()
-          if (ok) setAmount(amount + 1)
-        }}
-      >
-        Buy x1
-      </button>
+      <div className="helper-item-row">
+        <div className="helper-item-element">{props.item.name}</div>
+        <div className="helper-item-element">${props.item.price}</div>
+      </div>
+
+      <div className="helper-item-row">
+        <div className="helper-item-amount helper-item-element">x{amount}</div>
+        <div className="helper-item-element">+{props.item.cps} cps</div>
+        <div className="helper-item-element">
+          <button
+            onClick={() => {
+              const ok = props.onClick()
+              if (ok) setAmount(amount + 1)
+            }}
+          >
+            Buy x1
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

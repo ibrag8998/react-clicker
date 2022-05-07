@@ -1,3 +1,11 @@
-.HUD {
-  border: 1px dashed black;
+.hud {
+  /* border: 1px dashed black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-item {
+  width: 100%;
+  text-align: center;
 }
