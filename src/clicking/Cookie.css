@@ -1,3 +1,7 @@
+.cookie-wrapper {
+  border: 1px dashed black;
+}
+
 #cookie {
   width: 200px;
   height: 200px;

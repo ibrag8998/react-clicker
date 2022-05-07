@@ -1,6 +1,6 @@
 import React from "react"
 import "./App.css"
-import AutoList from "./auto/AutoList"
+import HelperList from "./helpers/HelperList"
 import Cookie from "./clicking/Cookie"
 import HUD from "./hud/HUD"
 
@@ -27,7 +27,7 @@ class App extends React.Component {
     })
   }
 
-  handleAutoItemClick = (cpsToAdd, price) => {
+  handleHelperItemClick = (cpsToAdd, price) => {
     const cookies = this.state.cookies
 
     if (cookies < price) return false
@@ -45,7 +45,7 @@ class App extends React.Component {
         <HUD cookies={this.state.cookies} cps={this.state.cps10 * 10} />
         <div className="core">
           <Cookie onClick={this.handleCookieClick} />
-          <AutoList onAutoItemClick={this.handleAutoItemClick} />
+          <HelperList onHelperItemClick={this.handleHelperItemClick} />
         </div>
       </div>
     )

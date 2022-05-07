@@ -1,5 +1,9 @@
 import "./Cookie.css"
 
 export default function Cookie(props) {
-  return <button id="cookie" onClick={props.onClick}></button>
+  return (
+    <div className="cookie-wrapper">
+      <button id="cookie" onClick={props.onClick}></button>
+    </div>
+  )
 }

@@ -1,4 +1,4 @@
-const autoItems = [
+const helpers = [
   {
     id: 1,
     name: "cursor",
@@ -13,4 +13,4 @@ const autoItems = [
   },
 ]
 
-export default autoItems
+export default helpers
