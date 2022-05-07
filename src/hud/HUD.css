@@ -3,9 +3,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: rgb(126, 111, 90);
 }
 
 .hud-item {
   width: 100%;
   text-align: center;
+  color: white;
 }
