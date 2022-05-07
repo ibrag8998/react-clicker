@@ -10,6 +10,7 @@ export default function HelperList(props) {
           <HelperItem
             item={item}
             onClick={() => props.onHelperItemClick(item.cps, item.price)}
+            cookies={props.cookies}
           />
           <div
             className="helper-item-divider"

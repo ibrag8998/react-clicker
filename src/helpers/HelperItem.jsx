@@ -16,6 +16,11 @@ export default function HelperItem(props) {
         <div className="helper-item-element">+{props.item.cps} cps</div>
         <div className="helper-item-element">
           <button
+            className={
+              "buy-btn " +
+              (props.cookies < props.item.price ? "unavailable" : "available")
+            }
+            disabled={props.cookies < props.item.price}
             onClick={() => {
               const ok = props.onClick()
               if (ok) setAmount(amount + 1)

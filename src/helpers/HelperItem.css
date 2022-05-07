@@ -19,3 +19,17 @@
 .helper-item-element {
   padding: 0 5px;
 }
+
+.buy-btn {
+  border: none;
+  padding: auto 5px;
+}
+
+.buy-btn.available {
+  background-color: green;
+  color: white;
+}
+
+.buy-btn.unavailable {
+  /* background-color: red; */
+}

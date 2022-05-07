@@ -49,7 +49,10 @@ class App extends React.Component {
         />
         <div className="core">
           <Cookie onClick={this.handleCookieClick} />
-          <HelperList onHelperItemClick={this.handleHelperItemClick} />
+          <HelperList
+            onHelperItemClick={this.handleHelperItemClick}
+            cookies={this.state.cookies}
+          />
         </div>
       </div>
     )
