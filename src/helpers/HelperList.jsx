@@ -1,5 +1,5 @@
 import "./HelperList.css"
-import helpers from "./helpers"
+import { helpers } from "./helpers"
 import HelperItem from "./HelperItem"
 
 export default function HelperList(props) {

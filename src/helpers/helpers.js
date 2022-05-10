@@ -1,4 +1,4 @@
-const helpers = [
+export const helpers = [
   {
     id: 1,
     name: "cursor",
@@ -12,5 +12,3 @@ const helpers = [
     cps: 7,
   },
 ]
-
-export default helpers
